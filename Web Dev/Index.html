@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- ✅ Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="Personal portfolio of Dawinder Singh, aspiring Front-End Developer."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, React, Portfolio, Frontend Developer"
+    />
+    <meta name="author" content="Dawinder Singh" />
+
+    <!-- ✅ Open Graph Tags (For LinkedIn/Facebook Sharing) -->
+    <meta
+      property="og:title"
+      content="Dawinder Singh - Front-End Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Follow my 6-month journey to master HTML, CSS, JS, and React."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="Images/dawi.jpg" />
+    <meta property="og:url" content="https://your-portfolio-link.com" />
+
+    <!-- ✅ Twitter Card (For Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dawinder Singh - Front-End Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Follow my journey as I build real-world projects and grow as a developer."
+    />
+    <meta name="twitter:image" content="Images/dawi.jpg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dawinder Singh</h1>
+      <h2>Aspiring Front-End Developer</h2>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--About-->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Hi, I'm <strong>Dawinder Singh</strong>, an
+          <em>aspiring Front-End Developer</em> with a passion for building
+          clean, user-friendly web experiences.<br />
+          I'm currently on a 6-month journey to master HTML, CSS, JavaScript,
+          and React with the goal of landing a web developer role.<br />
+          Outside of coding, I enjoy fitness, learning about trading, and
+          constantly pushing myself to grow.
+        </p>
+        <img src="Images/dawi.jpg" alt="Dawinder Singh" width="200" />
+      </section>
+
+      <!--New Aside Section-->
+      <aside>
+        <h3>Currently Learning</h3>
+        <p>HTML Fundamentals and Semantic Structure</p>
+      </aside>
+
+      <!--Skills-->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <table border="1">
+          <caption>
+            My Currents Skills:
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Learning</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Soon</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!--Contact-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <fieldset>
+          <legend>Send me a message</legend>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <!--New dropdown-->
+            <label for="reason">Reason for Contact:</label>
+            <select name="reason" id="reason" required>
+              <option value="" disabled selected>--Select an option--</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="joboffer">Job Offer</option>
+              <option value="question">General Question</option></select
+            ><br /><br />
+
+            <!--New Radio Group-->
+            <p>Preferred Contact Method:</p>
+            <label for="email">
+              <input type="radio" name="email" value="email" />Email
+            </label>
+            <label for="whatsapp">
+              <input
+                type="radio"
+                name="whatsapp"
+                value="whatsapp"
+              />Whatsapp </label
+            ><br /><br />
+
+            <label for="msg">Message:</label>
+            <textarea name="message" id="msg" required></textarea><br /><br />
+
+            <label for="checkbox">
+              <input
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+                required
+              />Subscribe to my updates </label
+            ><br /><br />
+
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </form>
+        </fieldset>
+      </section>
+
+      <!--Multimedia-->
+      <section id="multimedia">
+        <h2>Media</h2>
+        <figure>
+          <img src="Images/dawi.jpg" alt="Dawinder Singh" width="200" />
+          <figcaption>This is me!</figcaption>
+        </figure>
+
+        <audio controls>
+          <source src="Media/8.mp3" type="audio/mp3" />
+        </audio>
+
+        <video controls width="200">
+          <source src="Media/42.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2025 Dawinder Singh |
+        <a href="mailto:singhdawinder686@gmail.com">Email</a> |
+        <a
+          href="https://www.linkedin.com/in/dawindersingh"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
